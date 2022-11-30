@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 2%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*******/
+
+header{
+    width: 100%;
+    height: 140vh;
+    background-image: url('../images/HERO\ BACKGROUND.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+header .menu .logo{
+    font-size: 1.4em;
+}
+
+header .menu .logo h2{
+    color: #FFDD33;
+    font-weight: 200;
+}
+
+header .menu .logo h2 span{
+    color: #FFf;
+    font-weight: bold;
+}
+
+header .menu .menu-desktop,
+header .menu .menu-mobile{
+    padding-top: 2.2em;
+}
+
+header .menu .menu-mobile{
+    display: none;
+}
+
+header .menu .menu-desktop nav ul li,
+header .menu .menu-mobile nav ul li{
+    margin: 0 1em;
+    list-style-type: none;
+}
+
+header .menu .menu-desktop nav ul li a,
+header .menu .menu-mobile nav ul li a{
+    color: #FFf;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .menu .menu-mobile nav{
+    position: fixed;
+    text-align: center;
+    right: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: #0F3FD3;
+}
+
+header .menu .menu-mobile .btn-menu{
+    position: fixed;
+    padding: .8em;
+    right: 2.5em;
+    top: 2em;
+    border-radius: 20px;
+    background-color: #0F3FD3;
+}
+
+header .menu .menu-mobile nav h2{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header .menu .menu-mobile nav > h2 span{
+    padding-left: 1em;
+}
+
+header .menu .menu-mobile nav ul{
+    height: 40%;
+}
+
+header .menu .menu-mobile nav .logo h2{
+    font-size: 1em;
+    color: #FFDD33;
+}
+
+header .menu .menu-desktop nav ul li a:hover{
+    border-bottom: 3px solid #FFDD33;
+}
+
+.header-titulo{
+    margin: 0 auto;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.header-titulo h2{
+    font-size: 2.2em;
+    color: #FFf;
+    font-weight: 400;
+}
+
+.header-titulo h2 span{
+    font-weight: bold;
+}
+
+.header-titulo p{
+    color: #FFf;
+    margin: 1em 0;
+    font-weight: 200;
+
+}
+
+.header-titulo .header-computador{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 3em;
+
+}
+
+.header-titulo .header-computador img{
+    max-width: 100%;
+}
+
+/*******/
+
+section.marcas .container img{
+    width: calc(100%/5);
+}
+
+/*******/
+
+.resultados{
+    padding: 5em 0;
+    background-color: #FBFCFE;
+    text-align: center;
+}
+
+.resultados h2{
+    font-size: 2em;
+}
+
+.resultados p{
+    color: #7E92AC;
+    margin: 1.5em 0;
+}
+
+.resultados .cards-resultados{
+    text-align: left;
+    padding: 1.5em;
+}
+
+.resultados .cards-resultados .cards-single{
+    padding: 1.5em;
+    margin: 0 1em;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 20px;
+}
+
+.resultados .cards-resultados .cards-single img{
+    width: 6em;
+}
+
+.resultados .cards-resultados h2{
+    font-size: 1.5em;
+    padding: .5em 0;
+}
+
+.resultados .cards-resultados p{
+    font-size: 1em;
+    color: #7E92AC;
+}
+
+/*******/
+
+section.banner{
+    height: 50vh;
+    padding-top: 6em;
+    background-image: url(../images/BANNER\ IMG.svg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+section.banner h2{
+    color: #FFf;
+    font-size: 3em;
+}
+
+section.banner p{
+    margin: 2em 0;
+    font-size: 1em;
+    color: #7E92AC;
+}
+
+section.banner a{
+    text-decoration: none;
+    background-color: #FFDD33;
+    color: #0F3FD3;
+    padding: .7em 1.2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/*******/
+
+section.beneficios{
+    padding: 60px 0;
+}
+
+section.beneficios .container{
+    max-width: 1200px;
+}
+
+.part1{
+    width: 50vw;
+}
+
+.part1 h2{
+    font-size: 3em;
+    padding: .2em 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.part1-check{
+    margin: 30px 0;
+}
+
+.part1-check .single-check{
+    align-self: center;
+    margin: -30px auto;
+}
+
+.part1-check .single-check p{
+    color: #7E92AC;
+    margin-top: 18px;
+    line-height: 30px;
+}
+
+.part1 .btn{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.part1 .btn a{
+    text-align: center;
+    text-decoration: none;
+    background-color: #0F3FD3;
+    color: #FFf;
+    font-size: 1em;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+}
+
+.part2{
+    width: 50vw;
+    height: 70vh;
+}
+
+.part2 .part2-imagem{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/IMAGEM1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: 5px solid #FFf;
+}
+
+/*******/
+
+section.depoimentos{
+    padding: 60px 0;
+    text-align: center;
+    background-color: #FBFCFE;
+}
+
+section.depoimentos .container > h2{
+    padding: 1em 0;
+    font-size: 2.5em;
+}
+
+.depoimentos-grupo .depoimentos-single{
+    background-color: #Fff;
+    margin: 0 .5em;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px #70707016;
+}
+
+.depoimentos-grupo .depoimentos-single img{
+    width: 100px;
+    height: 100px;
+    margin: 2em 0;
+}
+
+.depoimentos-grupo .depoimentos-single img.estrelas{
+    width: auto;
+    height: auto;
+}
+
+.depoimentos-grupo .depoimentos-single h2{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.depoimentos-grupo .depoimentos-single p{
+    color: #7E92AC;
+    padding-top: 1em;
+}
+
+/*******/
+
+section.form{
+    padding: 80px 0;
+}
+
+section.form h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section.form form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+section.form form input,
+section.form form textarea{
+    width: 100%;
+    margin: .5em 0;
+    padding: .9em 0;
+    padding-left: .5em;
+    font-size: .9em;
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+}
+
+section.form form input[type=submit]{
+    background-color: #0F3FD3;
+    color: #Fff;
+    cursor: pointer;
+    border: 0;
+}
+
+section.form form textarea{
+    height: 200px;
+    resize: none;
+}
+
+/********/
+
+footer{
+    padding: 30px 0;
+    background-color: #0F3FD3;
+    color: #FBFCFE;
+    text-align: center;
+}
+
+footer h2{
+    font-size: 1em;
+    font-weight: 200;
+}
+
+/********/
+
+@media screen and (max-width: 760px) {
+
+    header .menu .menu-desktop{
+        display: none;
+    }
+
+    header .menu .menu-mobile{
+        display: inline;
+    }
+
+    /********/
+
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /*******/
+
+    section.marcas .container img{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*******/
+
+    
+    .header-titulo .header-computador{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4em;
+
+    }
+
+    .header-titulo .header-computador img{
+        max-width: 100%;
+    }
+
+    /*******/
+    
+    .resultados .cards-resultados .cards-single{
+        text-align: center;
+        margin: 1em 0;
+    }
+    
+    .resultados .cards-resultados .cards-single img{
+        width: 6em;
+    }
+
+    /********/
+
+    
+    section.banner{
+        height: 100%;
+        padding: 3em 0;
+        background-image: url(../images/BANNER\ IMG.svg);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    /*******/
+
+    
+    .part1{
+        width: 90vw;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .part2{
+        width: 100vw;
+    }
+
+    .part1-check{
+        margin: 30px 0;
+    }
+    
+    .part1-check .single-check{
+        align-self: center;
+        flex-direction: row;
+        margin: 40px auto;
+    }
+
+    .part1-check .single-check img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .part1-check .single-check p{
+        color: #7E92AC;
+        margin-top: 0;
+    }
+
+    /*******/
+
+    .depoimentos-grupo .depoimentos-single{
+        margin: 1em .5em;
+    }
+    
+    
+}
